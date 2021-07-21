@@ -4,15 +4,23 @@ import Profileitem from './Profileitem'
 // import Conversationbox from './Conversationbox'
 
 
-function Profilelist({profileListArray}) {
-    
+export const Profilelist =({profileListArray,selectedChatIndex,onClick}) => {
+    console.log(
+      profileListArray,
+      selectedChatIndex,
+      onClick
+    );
     return (
-        
-        <div className="">
-        {profileListArray.map((item) => (
-          <Profileitem link={item.link} profilename={item.profilename} messageshortform={item.messageshortform} numberOfUnreadMessages={item.numberOfUnreadMessages} isOnline={item.isOnline ?  "active":""} />
+        <>
+        {profileListArray.map((item,index) => (
+          <Profileitem
+          ItemData={item}
+            index={index} 
+            selectedChatIndex={selectedChatIndex}
+             onClick={onClick}
+             />
         ))}
-        </div>
+        </>
         
   
     )

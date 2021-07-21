@@ -1,20 +1,20 @@
 import React from 'react';
 
-import Profilelist from './Profilelist';
+import ChatProfile from './ChatProfile';
 
 export default {
-  component:Profilelist,
-  title: 'Example/Profilelist',
+  component:ChatProfile,
+  title: 'page/ChatProfile',
  
 };
-const Template = (args) => <Profilelist {...args} />;
+const Template = (args) => <ChatProfile {...args} />;
 
-export const list = Template.bind({});
-list.args ={
-    profileListArray  : [
+export const chatlistpage = Template.bind({});
+chatlistpage.args = {
+    dataArray  : [
         {   
             isOnline: true,
-            id:1,
+
             link:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU" ,
             numberOfUnreadMessages: 5,
             profilename: 'Ash',
@@ -35,7 +35,7 @@ list.args ={
         },
         {   
             isOnline: false,
-            id:2,
+        
             link:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZ6tM7Nj72bWjr_8IQ37Apr2lJup_pxX_uZA&usqp=CAU",
             numberOfUnreadMessages: "2",
             profilename: 'Tom',
@@ -57,7 +57,7 @@ list.args ={
 
         {   
             isOnline: true,
-            id:3,
+        
             link:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJo1MiPQp3IIdp54vvRDXlhbqlhXW9v1v6kw&usqp=CAU",
             numberOfUnreadMessages: 1,
             profilename: 'max',
@@ -79,7 +79,7 @@ list.args ={
 
         {   
             isOnline: false,
-            id:4,
+    
             nummsg:false,
             link:"https://huber.ghostpool.com/wp-content/uploads/avatars/3/596dfc2058143-bpfull.png" ,
             numberOfUnreadMessages: "6",
@@ -89,13 +89,13 @@ list.args ={
                 from: 'Ash',
                 to: 'rahual',
                 time: '',
-                text:"",
+                text:"hjklkjhgfdsdfghjklkjhgfghjmkmjnhg",
             },
             {
                 from: 'rahul',
                 to: 'Ash',
                 time: '',
-                text:"",
+                text:"eerggcvbnmjklkmjnhbgvfcdvfbgnhmjkmjnhbg",
             }
         ]
         },
@@ -103,7 +103,7 @@ list.args ={
 
         {   
             isOnline: true,
-            id:5,
+
             nummsg:false,
             link: "https://pbs.twimg.com/profile_images/1055263632861343745/vIqzOHXj.jpg",
             numberOfUnreadMessages: 2,
@@ -111,67 +111,17 @@ list.args ={
             messageshortform: 'Lorem ipsum dolor sit amet',
             conversationArray: [{
                 from: 'rahul',
-                to: '',
+                to: 'harry',
                 time: '',
-                text:"",
+                text:"dfghjkl;/.lkijuhygtfrgthjmk,l.",
             },
             {
                 from: 'rahul',
-                to: 'Ash',
+                to: 'harry',
                 time: '',
-                text:"",
+                text:"dfvgbhnjmk,l.,km,jhgvfgbhnjmk,lkmjnhb",
             }
         ]
         }
     ]
 }
-    
-
-
-// export const user1 = Template.bind({});
-// user1.args = {
-//  profilename:"Ella",
-//  link:"https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg" ,
-// };
-
-// export const user2 = Template.bind({});
-// user2.args = {
-//  profilename:"Ella",
-//  link:"https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg" ,
-// };
-
-// export const user3 = Template.bind({});
-// user3.args = {
-//  profilename:"Ella",
-//  link:"https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg" ,
-// };
-
-// export const user4 = Template.bind({});
-// user4.args = {
-//  profilename:"Ella",
-//  link:"https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg" ,
-// };
-
-// export const user5 = Template.bind({});
-// user5.args = {
-//  profilename:"Ella",
-//  link:"https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg" ,
-// };
-
-// export const user6 = Template.bind({});
-// user6.args = {
-//  profilename:"Ella",
-//  link:"https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg" ,
-// };
-
-// export const user7 = Template.bind({});
-// user7.args = {
-//  profilename:"Ella",
-//  link:"https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg" ,
-// };
-
-// export const user8 = Template.bind({});
-// user8.args = {
-//  profilename:"Ella",
-//  link:"https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg" ,
-//  };

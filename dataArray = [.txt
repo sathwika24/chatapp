@@ -1,0 +1,12 @@
+dataArray = [
+    {   
+        isOnline: true
+        link:"https/profilepic"
+        numberOfUnreadMessages: 10
+        name: 'Ash'
+        messageShortform: 'Lorem ipsum dolor sit amet'
+        conversationArray: [{
+            from: 'Ash'
+            to: ''
+            time: ''
+        }]

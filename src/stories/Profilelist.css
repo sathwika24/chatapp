@@ -1,23 +1,22 @@
 .listOfUsers{
-    width: 30%;
-    height: 100%;
+    /* width: 30%; */
+    /* height: 100%; */
     overflow-x: hidden;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
-.displayName{
-    display: flex;
-    align-items: center;
+.display-name{
+    justify-items: center;
     padding: 5px 10px;
     box-sizing: border-box;
     cursor: pointer;
 }
+
 .avatar {
     width: 40px;
-    height: 40px;
+    height: 35px;
     border-radius: 50%;
-  
-    margin-right: 20px;
+    margin-right: 10px;
     position: relative;
   }
   .avatar img {
@@ -32,12 +31,11 @@
     height: 100%;
   }
   .isOnline {
-    position: absolute;
     width: 10px;
     height: 10px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 0px;
+    right: 30px;
     background-color: #ddd;
     border-radius: 50%;
     border: 2px solid #fff;
@@ -57,4 +55,10 @@
     border-radius: 50%;
     border: 2px solid rgb(51, 160, 51);
   }
-  
+
+  .bg.light{
+    background-color: aquamarine;
+  }
+  .bg.none{
+    background-color: rgb(182, 146, 26);
+  }
